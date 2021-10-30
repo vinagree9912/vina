@@ -20,4 +20,12 @@ public class HelloController {
         return new ResponseEntity<String>(helloReact,new HttpHeaders(), HttpStatus.OK);
     }
 
+    @GetMapping("/helloreact")
+    public ResponseEntity<String> helloReact2(){
+
+        String helloReact="Hello react by Nicolas " + new Date();
+
+        return new ResponseEntity<String>(helloReact,new HttpHeaders(), HttpStatus.OK);
+    }
+
 }
